@@ -1,0 +1,11 @@
+site_name: Color Project Docs
+nav:
+    - Installation: index.md
+    - ColorCLI: colorcli.md
+    - ColorDaemon: colord.md
+    - Faucet: faucet.md
+    - Explorer: Explorer_setup.md
+
+theme: material
+
+
