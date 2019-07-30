@@ -8,6 +8,7 @@ nav:
     - JoinTestNet: joinTestNet.md
     - ChangeValidatorLogo: ChangeMonikerLogo.md
     - Ledger Nano Setup: ledgersetup.md
+    - Ledger Nano Color App Setup: ledger-colors.md
 theme: material
 
 
