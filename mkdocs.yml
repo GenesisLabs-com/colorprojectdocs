@@ -5,6 +5,8 @@ nav:
     - ColorDaemon: colord.md
     - Faucet: faucet.md
     - Explorer: Explorer_setup.md
+    - JoinTestNet: joinTestNet.md
+    - ChangeValidatorLogo: ChangeMonikerLogo.md
 
 theme: material
 
