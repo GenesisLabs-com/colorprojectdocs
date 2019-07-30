@@ -7,7 +7,7 @@ nav:
     - Explorer: Explorer_setup.md
     - JoinTestNet: joinTestNet.md
     - ChangeValidatorLogo: ChangeMonikerLogo.md
-
+    - Ledger Nano Setup: ledgersetup.md
 theme: material
 
 
