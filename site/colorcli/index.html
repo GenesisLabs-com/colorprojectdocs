@@ -1,0 +1,1895 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>ColorCLI - Color Project Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#color-client" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Color Project Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Color Project Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                ColorCLI
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Color Project Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Color Project Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        ColorCLI
+      </label>
+    
+    <a href="./" title="ColorCLI" class="md-nav__link md-nav__link--active">
+      ColorCLI
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#color-cli" title="Color CLI" class="md-nav__link">
+    Color CLI
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-colorcli" title="Setting up colorcli" class="md-nav__link">
+    Setting up colorcli
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keys" title="Keys" class="md-nav__link">
+    Keys
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-types" title="Key Types" class="md-nav__link">
+    Key Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-keys" title="Generate Keys" class="md-nav__link">
+    Generate Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-multisig-public-keys" title="Generate Multisig Public Keys" class="md-nav__link">
+    Generate Multisig Public Keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tx-broadcasting" title="Tx Broadcasting" class="md-nav__link">
+    Tx Broadcasting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fees-gas" title="Fees &amp; Gas" class="md-nav__link">
+    Fees &amp; Gas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account" title="Account" class="md-nav__link">
+    Account
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-account-balance" title="Query Account Balance" class="md-nav__link">
+    Query Account Balance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-tokens" title="Send Tokens" class="md-nav__link">
+    Send Tokens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-transactions" title="Query Transactions" class="md-nav__link">
+    Query Transactions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matching-a-set-of-tags" title="Matching a Set of Tags" class="md-nav__link">
+    Matching a Set of Tags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matching-a-transactions-hash" title="Matching a Transaction's Hash" class="md-nav__link">
+    Matching a Transaction's Hash
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slashing" title="Slashing" class="md-nav__link">
+    Slashing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unjailing" title="Unjailing" class="md-nav__link">
+    Unjailing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signing-info" title="Signing Info" class="md-nav__link">
+    Signing Info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters" title="Query Parameters" class="md-nav__link">
+    Query Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minting" title="Minting" class="md-nav__link">
+    Minting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-validators" title="Query Validators" class="md-nav__link">
+    Query Validators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bond-tokens" title="Bond Tokens" class="md-nav__link">
+    Bond Tokens
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-delegations" title="Query Delegations" class="md-nav__link">
+    Query Delegations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unbond-tokens" title="Unbond Tokens" class="md-nav__link">
+    Unbond Tokens
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-unbonding-delegations" title="Query Unbonding-Delegations" class="md-nav__link">
+    Query Unbonding-Delegations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redelegate-tokens" title="Redelegate Tokens" class="md-nav__link">
+    Redelegate Tokens
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-redelegations" title="Query Redelegations" class="md-nav__link">
+    Query Redelegations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters_1" title="Query Parameters" class="md-nav__link">
+    Query Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-pool" title="Query Pool" class="md-nav__link">
+    Query Pool
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-delegations-to-validator" title="Query Delegations To Validator" class="md-nav__link">
+    Query Delegations To Validator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance" title="Governance" class="md-nav__link">
+    Governance
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-governance-proposal" title="Create a Governance Proposal" class="md-nav__link">
+    Create a Governance Proposal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-proposals" title="Query Proposals" class="md-nav__link">
+    Query Proposals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increase-deposit" title="Increase Deposit" class="md-nav__link">
+    Increase Deposit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-deposits" title="Query Deposits" class="md-nav__link">
+    Query Deposits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vote-on-a-proposal" title="Vote on a Proposal" class="md-nav__link">
+    Vote on a Proposal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-votes" title="Query Votes" class="md-nav__link">
+    Query Votes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-proposal-tally-results" title="Query proposal tally results" class="md-nav__link">
+    Query proposal tally results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-governance-parameters" title="Query Governance Parameters" class="md-nav__link">
+    Query Governance Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fee-distribution" title="Fee Distribution" class="md-nav__link">
+    Fee Distribution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-distribution-parameters" title="Query Distribution Parameters" class="md-nav__link">
+    Query Distribution Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-distribution-community-pool" title="Query distribution Community Pool" class="md-nav__link">
+    Query distribution Community Pool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-outstanding-rewards" title="Query outstanding rewards" class="md-nav__link">
+    Query outstanding rewards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-validator-commission" title="Query Validator Commission" class="md-nav__link">
+    Query Validator Commission
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-validator-slashes" title="Query Validator Slashes" class="md-nav__link">
+    Query Validator Slashes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-delegator-rewards" title="Query Delegator Rewards" class="md-nav__link">
+    Query Delegator Rewards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-all-delegator-rewards" title="Query All Delegator Rewards" class="md-nav__link">
+    Query All Delegator Rewards
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multisig-transactions" title="Multisig Transactions" class="md-nav__link">
+    Multisig Transactions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shells-completion-scripts" title="Shells Completion Scripts" class="md-nav__link">
+    Shells Completion Scripts
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../colord/" title="ColorDaemon" class="md-nav__link">
+      ColorDaemon
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faucet/" title="Faucet" class="md-nav__link">
+      Faucet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Explorer_setup/" title="Explorer" class="md-nav__link">
+      Explorer
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ledgersetup/" title="Ledger Nano Setup" class="md-nav__link">
+      Ledger Nano Setup
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#color-cli" title="Color CLI" class="md-nav__link">
+    Color CLI
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-colorcli" title="Setting up colorcli" class="md-nav__link">
+    Setting up colorcli
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keys" title="Keys" class="md-nav__link">
+    Keys
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-types" title="Key Types" class="md-nav__link">
+    Key Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-keys" title="Generate Keys" class="md-nav__link">
+    Generate Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-multisig-public-keys" title="Generate Multisig Public Keys" class="md-nav__link">
+    Generate Multisig Public Keys
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tx-broadcasting" title="Tx Broadcasting" class="md-nav__link">
+    Tx Broadcasting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fees-gas" title="Fees &amp; Gas" class="md-nav__link">
+    Fees &amp; Gas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account" title="Account" class="md-nav__link">
+    Account
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-account-balance" title="Query Account Balance" class="md-nav__link">
+    Query Account Balance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-tokens" title="Send Tokens" class="md-nav__link">
+    Send Tokens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-transactions" title="Query Transactions" class="md-nav__link">
+    Query Transactions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matching-a-set-of-tags" title="Matching a Set of Tags" class="md-nav__link">
+    Matching a Set of Tags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matching-a-transactions-hash" title="Matching a Transaction's Hash" class="md-nav__link">
+    Matching a Transaction's Hash
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slashing" title="Slashing" class="md-nav__link">
+    Slashing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unjailing" title="Unjailing" class="md-nav__link">
+    Unjailing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signing-info" title="Signing Info" class="md-nav__link">
+    Signing Info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters" title="Query Parameters" class="md-nav__link">
+    Query Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minting" title="Minting" class="md-nav__link">
+    Minting
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-validators" title="Query Validators" class="md-nav__link">
+    Query Validators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bond-tokens" title="Bond Tokens" class="md-nav__link">
+    Bond Tokens
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-delegations" title="Query Delegations" class="md-nav__link">
+    Query Delegations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unbond-tokens" title="Unbond Tokens" class="md-nav__link">
+    Unbond Tokens
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-unbonding-delegations" title="Query Unbonding-Delegations" class="md-nav__link">
+    Query Unbonding-Delegations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redelegate-tokens" title="Redelegate Tokens" class="md-nav__link">
+    Redelegate Tokens
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-redelegations" title="Query Redelegations" class="md-nav__link">
+    Query Redelegations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-parameters_1" title="Query Parameters" class="md-nav__link">
+    Query Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-pool" title="Query Pool" class="md-nav__link">
+    Query Pool
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-delegations-to-validator" title="Query Delegations To Validator" class="md-nav__link">
+    Query Delegations To Validator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance" title="Governance" class="md-nav__link">
+    Governance
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-governance-proposal" title="Create a Governance Proposal" class="md-nav__link">
+    Create a Governance Proposal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-proposals" title="Query Proposals" class="md-nav__link">
+    Query Proposals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#increase-deposit" title="Increase Deposit" class="md-nav__link">
+    Increase Deposit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-deposits" title="Query Deposits" class="md-nav__link">
+    Query Deposits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vote-on-a-proposal" title="Vote on a Proposal" class="md-nav__link">
+    Vote on a Proposal
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-votes" title="Query Votes" class="md-nav__link">
+    Query Votes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-proposal-tally-results" title="Query proposal tally results" class="md-nav__link">
+    Query proposal tally results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-governance-parameters" title="Query Governance Parameters" class="md-nav__link">
+    Query Governance Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fee-distribution" title="Fee Distribution" class="md-nav__link">
+    Fee Distribution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-distribution-parameters" title="Query Distribution Parameters" class="md-nav__link">
+    Query Distribution Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-distribution-community-pool" title="Query distribution Community Pool" class="md-nav__link">
+    Query distribution Community Pool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-outstanding-rewards" title="Query outstanding rewards" class="md-nav__link">
+    Query outstanding rewards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-validator-commission" title="Query Validator Commission" class="md-nav__link">
+    Query Validator Commission
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-validator-slashes" title="Query Validator Slashes" class="md-nav__link">
+    Query Validator Slashes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-delegator-rewards" title="Query Delegator Rewards" class="md-nav__link">
+    Query Delegator Rewards
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-all-delegator-rewards" title="Query All Delegator Rewards" class="md-nav__link">
+    Query All Delegator Rewards
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multisig-transactions" title="Multisig Transactions" class="md-nav__link">
+    Multisig Transactions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shells-completion-scripts" title="Shells Completion Scripts" class="md-nav__link">
+    Shells Completion Scripts
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="color-client">Color Client</h1>
+<h2 id="color-cli">Color CLI</h2>
+<p><code>colorcli</code> is the tool that enables you to interact with the node that runs on the Color network, whether you run it yourself or not. Let us set it up properly. In order to install it, follow the <a href="..">installation procedure</a>.</p>
+<h3 id="setting-up-colorcli">Setting up colorcli</h3>
+<p>The main command used to set up <code>colorcli</code> is the following:</p>
+<pre><code class="bash">colorcli config &lt;flag&gt; &lt;value&gt;
+</code></pre>
+
+<p>It allows you to set a default value for each given flag. </p>
+<p>First, set up the address of the full-node you want to connect to:</p>
+<pre><code class="bash">colorcli config node &lt;host&gt;:&lt;port
+
+# example: colorcli config node https://77.87.106.33:26657
+</code></pre>
+
+<p>If you run your own full-node, just use <code>tcp://localhost:26657</code> as the address. </p>
+<p>Then, let us set the default value of the <code>--trust-node</code> flag:</p>
+<pre><code class="bash">colorcli config trust-node true
+
+# Set to true if you trust the full-node you are connecting to, false otherwise
+</code></pre>
+
+<p>Finally, let us set the <code>chain-id</code> of the blockchain we want to interact with:</p>
+<pre><code class="bash">colorcli config chain-id &lt;testchain&gt;
+</code></pre>
+
+<h3 id="keys">Keys</h3>
+<h4 id="key-types">Key Types</h4>
+<p>There are three types of key representations that are used:</p>
+<ul>
+<li><code>cosmos</code></li>
+<li>Derived from account keys generated by <code>colorcli keys add</code></li>
+<li>Used to receive funds</li>
+<li>
+<p>e.g. <code>cosmos15h6vd5f0wqps26zjlwrc6chah08ryu4hzzdwhc</code></p>
+</li>
+<li>
+<p><code>cosmosvaloper</code></p>
+</li>
+<li>Used to associate a validator to it's operator</li>
+<li>Used to invoke staking commands</li>
+<li>
+<p>e.g. <code>cosmosvaloper1carzvgq3e6y3z5kz5y6gxp3wpy3qdrv928vyah</code></p>
+</li>
+<li>
+<p><code>cosmospub</code></p>
+</li>
+<li>Derived from account keys generated by <code>colorcli keys add</code></li>
+<li>e.g. <code>cosmospub1zcjduc3q7fu03jnlu2xpl75s2nkt7krm6grh4cc5aqth73v0zwmea25wj2hsqhlqzm</code></li>
+<li><code>cosmosvalconspub</code></li>
+<li>Generated when the node is created with <code>colord init</code>.</li>
+<li>Get this value with <code>colord tendermint show-validator</code></li>
+<li>e.g. <code>cosmosvalconspub1zcjduepq0ms2738680y72v44tfyqm3c9ppduku8fs6sr73fx7m666sjztznqzp2emf</code></li>
+</ul>
+<h4 id="generate-keys">Generate Keys</h4>
+<p>You'll need an account private and public key pair (a.k.a. <code>sk, pk</code> respectively) to be able to receive funds, send txs, bond tx, etc.</p>
+<p>To generate a new <em>secp256k1</em> key:</p>
+<pre><code class="bash">colorcli keys add &lt;account_name&gt;
+</code></pre>
+
+<p>Next, you will have to create a passphrase to protect the key on disk. The output of the above
+command will contain a <em>seed phrase</em>. It is recommended to save the <em>seed phrase</em> in a safe
+place so that in case you forget the password, you could eventually regenerate the key from
+the seed phrase with the following command:</p>
+<pre><code class="bash">colorcli keys add --recover
+</code></pre>
+
+<p>If you check your private keys, you'll now see <code>&lt;account_name&gt;</code>:</p>
+<pre><code class="bash">colorcli keys show &lt;account_name&gt;
+</code></pre>
+
+<p>View the validator operator's address via:</p>
+<pre><code class="shell">colorcli keys show &lt;account_name&gt; --bech=val
+</code></pre>
+
+<p>You can see all your available keys by typing:</p>
+<pre><code class="bash">colorcli keys list
+</code></pre>
+
+<p>View the validator pubkey for your node by typing:</p>
+<pre><code class="bash">colord tendermint show-validator
+</code></pre>
+
+<p>Note that this is the Tendermint signing key, <em>not</em> the operator key you will use in delegation transactions.</p>
+<p>::: danger Warning
+We strongly recommend <em>NOT</em> using the same passphrase for multiple keys.
+:::</p>
+<h4 id="generate-multisig-public-keys">Generate Multisig Public Keys</h4>
+<p>You can generate and print a multisig public key by typing:</p>
+<pre><code class="bash">colorcli keys add --multisig=name1,name2,name3[...] --multisig-threshold=K new_key_name
+</code></pre>
+
+<p><code>K</code> is the minimum number of private keys that must have signed the
+transactions that carry the public key's address as signer.</p>
+<p>The <code>--multisig</code> flag must contain the name of public keys that will be combined into a
+public key that will be generated and stored as <code>new_key_name</code> in the local database.
+All names supplied through <code>--multisig</code> must already exist in the local database. Unless
+the flag <code>--nosort</code> is set, the order in which the keys are supplied on the command line
+does not matter, i.e. the following commands generate two identical keys:</p>
+<pre><code class="bash">colorcli keys add --multisig=foo,bar,baz --multisig-threshold=2 multisig_address
+colorcli keys add --multisig=baz,foo,bar --multisig-threshold=2 multisig_address
+</code></pre>
+
+<p>Multisig addresses can also be generated on-the-fly and printed through the which command:</p>
+<pre><code class="bash">colorcli keys show --multisig-threshold K name1 name2 name3 [...]
+</code></pre>
+
+<p>For more information regarding how to generate, sign and broadcast transactions with a
+multi signature account see <a href="#multisig-transactions">Multisig Transactions</a>.</p>
+<h3 id="tx-broadcasting">Tx Broadcasting</h3>
+<p>When broadcasting transactions, <code>colorcli</code> accepts a <code>--broadcast-mode</code> flag. This
+flag can have a value of <code>sync</code> (default), <code>async</code>, or <code>block</code>, where <code>sync</code> makes
+the client return a CheckTx response, <code>async</code> makes the client return immediately,
+and <code>block</code> makes the client wait for the tx to be committed (or timing out).</p>
+<p>It is important to note that the <code>block</code> mode should <strong>not</strong> be used in most
+circumstances. This is because broadcasting can timeout but the tx may still be
+included in a block. This can result in many undesirable situations. Therefor, it
+is best to use <code>sync</code> or <code>async</code> and query by tx hash to determine when the tx
+is included in a block.</p>
+<h3 id="fees-gas">Fees &amp; Gas</h3>
+<p>Each transaction may either supply fees or gas prices, but not both. </p>
+<p>Validator's have a minimum gas price (multi-denom) configuration and they use
+this value when when determining if they should include the transaction in a block during <code>CheckTx</code>, where <code>gasPrices &gt;= minGasPrices</code>. Note, your transaction must supply fees that are greater than or equal to <strong>any</strong> of the denominations the validator requires.</p>
+<p><strong>Note</strong>: With such a mechanism in place, validators may start to prioritize
+txs by <code>gasPrice</code> in the mempool, so providing higher fees or gas prices may yield higher tx priority.</p>
+<p>e.g.</p>
+<pre><code class="bash">colorcli tx send ... --fees=50000color
+</code></pre>
+
+<p>or</p>
+<pre><code class="bash">colorcli tx send ... --gas-prices=0.025color
+</code></pre>
+
+<h3 id="account">Account</h3>
+<!-- #### Get Tokens
+
+The best way to get tokens is from the [Cosmos Testnet Faucet](https://faucetcosmos.network). If the faucet is not working for you, try asking [#cosmos-validators](https://riot.im/app/#/room/#cosmos-validators:matrix.org). The faucet needs the `cosmos` from the account you wish to use for staking. -->
+
+<h4 id="query-account-balance">Query Account Balance</h4>
+<p>After receiving tokens to your address, you can view your account's balance by typing:</p>
+<pre><code class="bash">colorcli query account &lt;account_address&gt;
+</code></pre>
+
+<p>::: warning Note
+When you query an account balance with zero tokens, you will get this error: <code>No account with address &lt;account_address&gt; was found in the state.</code> This can also happen if you fund the account before your node has fully synced with the chain. These are both normal.</p>
+<p>:::</p>
+<h3 id="send-tokens">Send Tokens</h3>
+<p>The following command could be used to send coins from one account to another:</p>
+<pre><code class="bash">colorcli tx send &lt;sender_key_name_or_address&gt; &lt;recipient_address&gt; 10stake \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<p>::: warning Note
+The <code>amount</code> argument accepts the format <code>&lt;value|coin_name&gt;</code>.
+:::</p>
+<p>::: tip Note
+You may want to cap the maximum gas that can be consumed by the transaction via the <code>--gas</code> flag.
+If you pass <code>--gas=auto</code>, the gas supply will be automatically estimated before executing the transaction.
+Gas estimate might be inaccurate as state changes could occur in between the end of the simulation and the actual execution of a transaction, thus an adjustment is applied on top of the original estimate in order to ensure the transaction is broadcasted successfully. The adjustment can be controlled via the <code>--gas-adjustment</code> flag, whose default value is 1.0.
+:::</p>
+<p>Now, view the updated balances of the origin and destination accounts:</p>
+<pre><code class="bash">colorcli query account &lt;account_address&gt;
+colorcli query account &lt;destination_address&gt;
+</code></pre>
+
+<p>You can also check your balance at a given block by using the <code>--block</code> flag:</p>
+<pre><code class="bash">colorcli query account &lt;account_address&gt; --block=&lt;block_height&gt;
+</code></pre>
+
+<p>You can simulate a transaction without actually broadcasting it by appending the
+<code>--dry-run</code> flag to the command line:</p>
+<pre><code class="bash">colorcli tx send &lt;sender_key_name_or_address&gt; &lt;destination_account_address&gt; 10stake \
+  --chain-id=&lt;chain_id&gt; \
+  --dry-run
+</code></pre>
+
+<p>Furthermore, you can build a transaction and print its JSON format to STDOUT by
+appending <code>--generate-only</code> to the list of the command line arguments:</p>
+<pre><code class="bash">colorcli tx send &lt;sender_address&gt; &lt;recipient_address&gt; 10stake \
+  --chain-id=&lt;chain_id&gt; \
+  --generate-only &gt; unsignedSendTx.json
+</code></pre>
+
+<pre><code class="bash">colorcli tx sign \
+  --chain-id=&lt;chain_id&gt; \
+  --from=&lt;key_name&gt; \
+  unsignedSendTx.json &gt; signedSendTx.json
+</code></pre>
+
+<p>::: tip Note
+The <code>--generate-only</code> flag prevents <code>colorcli</code> from accessing the local keybase.
+Thus when such flag is supplied <code>&lt;sender_key_name_or_address&gt;</code> must be an address.
+:::</p>
+<p>You can validate the transaction's signatures by typing the following:</p>
+<pre><code class="bash">colorcli tx sign --validate-signatures signedSendTx.json
+</code></pre>
+
+<p>You can broadcast the signed transaction to a node by providing the JSON file to the following command:</p>
+<pre><code class="bash">colorcli tx broadcast --node=&lt;node&gt; signedSendTx.json
+</code></pre>
+
+<h3 id="query-transactions">Query Transactions</h3>
+<h4 id="matching-a-set-of-tags">Matching a Set of Tags</h4>
+<p>You can use the transaction search command to query for transactions that match a specific set of <code>tags</code>, which are added on every transaction.</p>
+<p>Each tag is conformed by a key-value pair in the form of <code>&lt;tag&gt;:&lt;value&gt;</code>. Tags can also be combined to query for a more specific result using the <code>&amp;</code> symbol.</p>
+<p>The command for querying transactions using a <code>tag</code> is the following:</p>
+<pre><code class="bash">colorcli query txs --tags='&lt;tag&gt;:&lt;value&gt;'
+</code></pre>
+
+<p>And for using multiple <code>tags</code>:</p>
+<pre><code class="bash">colorcli query txs --tags='&lt;tag1&gt;:&lt;value1&gt;&amp;&lt;tag2&gt;:&lt;value2&gt;'
+</code></pre>
+
+<p>The pagination is supported as well via <code>page</code> and <code>limit</code>:</p>
+<pre><code class="bash">colorcli query txs --tags='&lt;tag&gt;:&lt;value&gt;' --page=1 --limit=20
+</code></pre>
+
+<!-- ::: tip Note
+
+The action tag always equals the message type returned by the `Type()` function of the relevant message.
+
+You can find a list of available `tags` on each of the SDK modules:
+
+- [Common tags](https://github.com/cosmos/cosmos-sdk/blob/d1e76221d8e28824bb4791cb4ad8662d2ae9051e/types/tags.go#L57-L63)
+- [Staking tags](https://cosmos.network/docs/spec/staking/06_tags.html#tags)
+- [Governance tags](https://cosmos.network/docs/spec/governance/04_tags.html#tags)
+- [Slashing tags](https://cosmos.network/docs/spec/slashing/06_tags.html#tags)
+- [Distribution tags](https://cosmos.network/docs/spec/distribution/06_tags.html)
+- [Bank tags](https://cosmos.network/docs/spec/bank/04_tags.html#tags)
+::: -->
+
+<h4 id="matching-a-transactions-hash">Matching a Transaction's Hash</h4>
+<p>You can also query a single transaction by its hash using the following command:</p>
+<pre><code class="bash">colorcli query tx [hash]
+</code></pre>
+
+<h3 id="slashing">Slashing</h3>
+<h4 id="unjailing">Unjailing</h4>
+<p>To unjail your jailed validator</p>
+<pre><code class="bash">colorcli tx slashing unjail --from &lt;validator-operator-addr&gt;
+</code></pre>
+
+<h4 id="signing-info">Signing Info</h4>
+<p>To retrieve a validator's signing info:</p>
+<pre><code class="bash">colorcli query slashing signing-info &lt;validator-pubkey&gt;
+</code></pre>
+
+<h4 id="query-parameters">Query Parameters</h4>
+<p>You can get the current slashing parameters via:</p>
+<pre><code class="bash">colorcli query slashing params
+</code></pre>
+
+<h3 id="minting">Minting</h3>
+<p>You can query for the minting/inflation parameters via:</p>
+<pre><code class="bash">colorcli query minting params
+</code></pre>
+
+<p>To query for the current inflation value:</p>
+<pre><code class="bash">colorcli query minting inflation
+</code></pre>
+
+<p>To query for the current annual provisions value:</p>
+<pre><code class="bash">colorcli query minting annual-provisions
+</code></pre>
+
+<!-- ### Staking
+
+#### Set up a Validator
+
+Please refer to the [Validator Setup](../validators/validator-setup.md) section for a more complete guide on how to set up a validator-candidate.
+
+#### Delegate to a Validator
+
+On the upcoming mainnet, you can delegate `stake` to a validator. These [delegators](/resources/delegators-faq) can receive part of the validator's fee revenue. Read more about the [Cosmos Token Model](https://github.com/cosmos/cosmos/raw/master/Cosmos_Token_Model.pdf). -->
+
+<h5 id="query-validators">Query Validators</h5>
+<p>You can query the list of all validators of a specific chain:</p>
+<pre><code class="bash">colorcli query staking validators
+</code></pre>
+
+<p>If you want to get the information of a single validator you can check it with:</p>
+<pre><code class="bash">colorcli query staking validator &lt;account_cosmosval&gt;
+</code></pre>
+
+<h4 id="bond-tokens">Bond Tokens</h4>
+<pre><code class="bash">colorcli tx staking delegate \
+  --amount=10000000stake \
+  --validator=&lt;validator&gt; \
+  --from=&lt;key_name&gt; \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<p><code>&lt;validator&gt;</code> is the operator address of the validator to which you intend to delegate. If you are running a local testnet, you can find this with:</p>
+<pre><code class="bash">colorcli keys show [name] --bech val
+</code></pre>
+
+<p>where <code>[name]</code> is the name of the key you specified when you initialized <code>colord</code>.</p>
+<p>While tokens are bonded, they are pooled with all the other bonded tokens in the network. Validators and delegators obtain a percentage of shares that equal their stake in this pool.</p>
+<h5 id="query-delegations">Query Delegations</h5>
+<p>Once submitted a delegation to a validator, you can see it's information by using the following command:</p>
+<pre><code class="bash">colorcli query staking delegation &lt;delegator_addr&gt; &lt;validator_addr&gt;
+</code></pre>
+
+<p>Or if you want to check all your current delegations with disctinct validators:</p>
+<pre><code class="bash">colorcli query staking delegations &lt;delegator_addr&gt;
+</code></pre>
+
+<h4 id="unbond-tokens">Unbond Tokens</h4>
+<p>If for any reason the validator misbehaves, or you just want to unbond a certain
+amount of tokens, use this following command.</p>
+<pre><code class="bash">colorcli tx staking unbond \
+  &lt;validator_addr&gt; \
+  10stake \
+  --from=&lt;key_name&gt; \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<p>The unbonding will be automatically completed when the unbonding period has passed.</p>
+<h5 id="query-unbonding-delegations">Query Unbonding-Delegations</h5>
+<p>Once you begin an unbonding-delegation, you can see it's information by using the following command:</p>
+<pre><code class="bash">colorcli query staking unbonding-delegation &lt;delegator_addr&gt; &lt;validator_addr&gt;
+</code></pre>
+
+<p>Or if you want to check all your current unbonding-delegations with disctinct validators:</p>
+<pre><code class="bash">colorcli query staking unbonding-delegations &lt;account_cosmos&gt;
+</code></pre>
+
+<p>Additionally, as you can get all the unbonding-delegations from a particular validator:</p>
+<pre><code class="bash">colorcli query staking unbonding-delegations-from &lt;account_cosmosval&gt;
+</code></pre>
+
+<h4 id="redelegate-tokens">Redelegate Tokens</h4>
+<p>A redelegation is a type delegation that allows you to bond illiquid tokens from one validator to another:</p>
+<pre><code class="bash">colorcli tx staking redelegate \
+  &lt;src-validator-operator-addr&gt; \
+  &lt;dst-validator-operator-addr&gt; \
+  10stake \
+  --from=&lt;key_name&gt; \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<p>Here you can also redelegate a specific <code>shares-amount</code> or a <code>shares-fraction</code> with the corresponding flags.</p>
+<p>The redelegation will be automatically completed when the unbonding period has passed.</p>
+<h5 id="query-redelegations">Query Redelegations</h5>
+<p>Once you begin an redelegation, you can see it's information by using the following command:</p>
+<pre><code class="bash">colorcli query staking redelegation &lt;delegator_addr&gt; &lt;src_val_addr&gt; &lt;dst_val_addr&gt;
+</code></pre>
+
+<p>Or if you want to check all your current unbonding-delegations with distinct validators:</p>
+<pre><code class="bash">colorcli query staking redelegations &lt;account_cosmos&gt;
+</code></pre>
+
+<p>Additionally, as you can get all the outgoing redelegations from a particular validator:</p>
+<pre><code class="bash">  colorcli query staking redelegations-from &lt;account_cosmosval&gt;
+</code></pre>
+
+<h4 id="query-parameters_1">Query Parameters</h4>
+<p>Parameters define high level settings for staking. You can get the current values by using:</p>
+<pre><code class="bash">colorcli query staking params
+</code></pre>
+
+<p>With the above command you will get the values for:</p>
+<ul>
+<li>Unbonding time</li>
+<li>Maximum numbers of validators</li>
+<li>Coin denomination for staking</li>
+</ul>
+<p>All these values will be subject to updates though a <code>governance</code> process by <code>ParameterChange</code> proposals.</p>
+<h4 id="query-pool">Query Pool</h4>
+<p>A staking <code>Pool</code> defines the dynamic parameters of the current state. You can query them with the following command:</p>
+<pre><code class="bash">colorcli query staking pool
+</code></pre>
+
+<p>With the <code>pool</code> command you will get the values for:</p>
+<ul>
+<li>Not-bonded and bonded tokens</li>
+<li>Token supply</li>
+<li>Current annual inflation and the block in which the last inflation was processed</li>
+<li>Last recorded bonded shares</li>
+</ul>
+<h5 id="query-delegations-to-validator">Query Delegations To Validator</h5>
+<p>You can also query all of the delegations to a particular validator:</p>
+<pre><code class="bash">  colorcli query delegations-to &lt;account_cosmosval&gt;
+</code></pre>
+
+<h3 id="governance">Governance</h3>
+<p>Governance is the process from which users in the Color Platform can come to consensus
+on software upgrades, parameters of the mainnet or signaling mechanisms through
+text proposals. This is done through voting on proposals, which will be submitted
+by <code>color</code> holders on the mainnet.</p>
+<p>Some considerations about the voting process:</p>
+<ul>
+<li>Voting is done by bonded <code>color</code> holders on a 1 bonded <code>color</code> 1 vote basis</li>
+<li>Delegators inherit the vote of their validator if they don't vote</li>
+<li>Votes are tallied at the end of the voting period (2 weeks on mainnet) where
+each address can vote multiple times to update its <code>Option</code> value (paying the transaction fee each time),
+only the most recently cast vote will count as valid</li>
+<li>Voters can choose between options <code>Yes</code>, <code>No</code>, <code>NoWithVeto</code> and <code>Abstain</code></li>
+<li>At the end of the voting period, a proposal is accepted iff:</li>
+<li><code>(YesVotes / (YesVotes+NoVotes+NoWithVetoVotes)) &gt; 1/2</code></li>
+<li><code>(NoWithVetoVotes / (YesVotes+NoVotes+NoWithVetoVotes)) &lt; 1/3</code></li>
+<li><code>((YesVotes+NoVotes+NoWithVetoVotes) / totalBondedStake) &gt;= quorum</code></li>
+</ul>
+<p>For more information about the governance process and how it works, please check
+out the Governance module <a href="./../spec/governance">specification</a>.</p>
+<h4 id="create-a-governance-proposal">Create a Governance Proposal</h4>
+<p>In order to create a governance proposal, you must submit an initial deposit
+along with a title and description. Various modules outside of governance may
+implement their own proposal types and handlers (eg. parameter changes), where
+the governance module itself supports <code>Text</code> proposals. Any module
+outside of governance has it's command mounted on top of <code>submit-proposal</code>.</p>
+<p>To submit a <code>Text</code> proposal:</p>
+<pre><code class="bash">colorcli tx gov submit-proposal \
+  --title=&lt;title&gt; \
+  --description=&lt;description&gt; \
+  --type=&quot;Text&quot; \
+  --deposit=&quot;1000000color&quot; \
+  --from=&lt;name&gt; \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<p>You may also provide the proposal directly through the <code>--proposal</code> flag which
+points to a JSON file containing the proposal.</p>
+<p>To submit a parameter change proposal, you must provide a proposal file as its
+contents are less friendly to CLI input:</p>
+<pre><code class="bash">colorcli tx gov submit-proposal param-change &lt;path/to/proposal.json&gt; \
+  --from=&lt;name&gt; \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<p>Where <code>proposal.json</code> contains the following:</p>
+<pre><code class="json">{
+  &quot;title&quot;: &quot;Param Change&quot;,
+  &quot;description&quot;: &quot;Update max validators&quot;,
+  &quot;changes&quot;: [
+    {
+      &quot;subspace&quot;: &quot;staking&quot;,
+      &quot;key&quot;: &quot;MaxValidators&quot;,
+      &quot;value&quot;: 105
+    }
+  ],
+  &quot;deposit&quot;: [
+    {
+      &quot;denom&quot;: &quot;color&quot;,
+      &quot;amount&quot;: &quot;10000000&quot;
+    }
+  ]
+}
+</code></pre>
+
+<p>::: danger Warning</p>
+<p>Currently parameter changes are <em>evaluated</em> but not <em>validated</em>, so it is very important
+that any <code>value</code> change is valid (ie. correct type and within bounds) for its
+respective parameter, eg. <code>MaxValidators</code> should be an integer and not a decimal.</p>
+<p>Proper vetting of a parameter change proposal should prevent this from happening
+(no deposits should occur during the governance process), but it should be noted
+regardless. </p>
+<p>:::</p>
+<p>::: tip Note</p>
+<p>The <code>SoftwareUpgrade</code> is currently not supported as it's not implemented and
+currently does not differ from the semantics of a <code>Text</code> proposal.</p>
+<p>:::</p>
+<h5 id="query-proposals">Query Proposals</h5>
+<p>Once created, you can now query information of the proposal:</p>
+<pre><code class="bash">colorcli query gov proposal &lt;proposal_id&gt;
+</code></pre>
+
+<p>Or query all available proposals:</p>
+<pre><code class="bash">colorcli query gov proposals
+</code></pre>
+
+<p>You can also query proposals filtered by <code>voter</code> or <code>depositor</code> by using the corresponding flags.</p>
+<p>To query for the proposer of a given governance proposal:</p>
+<pre><code class="bash">colorcli query gov proposer &lt;proposal_id&gt;
+</code></pre>
+
+<h4 id="increase-deposit">Increase Deposit</h4>
+<p>In order for a proposal to be broadcasted to the network, the amount deposited must be above a <code>minDeposit</code> value (initial value: <code>512000000color</code>). If the proposal you previously created didn't meet this requirement, you can still increase the total amount deposited to activate it. Once the minimum deposit is reached, the proposal enters voting period:</p>
+<pre><code class="bash">colorcli tx gov deposit &lt;proposal_id&gt; &quot;10000000color&quot; \
+  --from=&lt;name&gt; \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<blockquote>
+<p><em>NOTE</em>: Proposals that don't meet this requirement will be deleted after <code>MaxDepositPeriod</code> is reached.</p>
+</blockquote>
+<h5 id="query-deposits">Query Deposits</h5>
+<p>Once a new proposal is created, you can query all the deposits submitted to it:</p>
+<pre><code class="bash">colorcli query gov deposits &lt;proposal_id&gt;
+</code></pre>
+
+<p>You can also query a deposit submitted by a specific address:</p>
+<pre><code class="bash">colorcli query gov deposit &lt;proposal_id&gt; &lt;depositor_address&gt;
+</code></pre>
+
+<h4 id="vote-on-a-proposal">Vote on a Proposal</h4>
+<p>After a proposal's deposit reaches the <code>MinDeposit</code> value, the voting period opens. Bonded <code>color</code> holders can then cast vote on it:</p>
+<pre><code class="bash">colorcli tx gov vote &lt;proposal_id&gt; &lt;Yes/No/NoWithVeto/Abstain&gt; \
+  --from=&lt;name&gt; \
+  --chain-id=&lt;chain_id&gt;
+</code></pre>
+
+<h5 id="query-votes">Query Votes</h5>
+<p>Check the vote with the option you just submitted:</p>
+<pre><code class="bash">colorcli query gov vote &lt;proposal_id&gt; &lt;voter_address&gt;
+</code></pre>
+
+<p>You can also get all the previous votes submitted to the proposal with:</p>
+<pre><code class="bash">colorcli query gov votes &lt;proposal_id&gt;
+</code></pre>
+
+<h4 id="query-proposal-tally-results">Query proposal tally results</h4>
+<p>To check the current tally of a given proposal you can use the <code>tally</code> command:</p>
+<pre><code class="bash">colorcli query gov tally &lt;proposal_id&gt;
+</code></pre>
+
+<h4 id="query-governance-parameters">Query Governance Parameters</h4>
+<p>To check the current governance parameters run:</p>
+<pre><code class="bash">colorcli query gov params
+</code></pre>
+
+<p>To query subsets of the governance parameters run:</p>
+<pre><code class="bash">colorcli query gov param voting
+colorcli query gov param tallying
+colorcli query gov param deposit
+</code></pre>
+
+<h3 id="fee-distribution">Fee Distribution</h3>
+<h4 id="query-distribution-parameters">Query Distribution Parameters</h4>
+<p>To check the current distribution parameters, run:</p>
+<pre><code class="bash">colorcli query distr params
+</code></pre>
+
+<h4 id="query-distribution-community-pool">Query distribution Community Pool</h4>
+<p>To query all coins in the community pool which is under Governance control:</p>
+<pre><code class="bash">colorcli query distr community-pool
+</code></pre>
+
+<h4 id="query-outstanding-rewards">Query outstanding rewards</h4>
+<p>To check the current outstanding (un-withdrawn) rewards, run:</p>
+<pre><code class="bash">colorcli query distr outstanding-rewards
+</code></pre>
+
+<h4 id="query-validator-commission">Query Validator Commission</h4>
+<p>To check the current outstanding commission for a validator, run:</p>
+<pre><code class="bash">colorcli query distr commission &lt;validator_address&gt;
+</code></pre>
+
+<h4 id="query-validator-slashes">Query Validator Slashes</h4>
+<p>To check historical slashes for a validator, run:</p>
+<pre><code class="bash">colorcli query distr slashes &lt;validator_address&gt; &lt;start_height&gt; &lt;end_height&gt;
+</code></pre>
+
+<h4 id="query-delegator-rewards">Query Delegator Rewards</h4>
+<p>To check current rewards for a delegation (were they to be withdrawn), run:</p>
+<pre><code class="bash">colorcli query distr rewards &lt;delegator_address&gt; &lt;validator_address&gt;
+</code></pre>
+
+<h4 id="query-all-delegator-rewards">Query All Delegator Rewards</h4>
+<p>To check all current rewards for a delegation (were they to be withdrawn), run:</p>
+<pre><code class="bash">colorcli query distr rewards &lt;delegator_address&gt;
+</code></pre>
+
+<h3 id="multisig-transactions">Multisig Transactions</h3>
+<p>Multisig transactions require signatures of multiple private keys. Thus, generating and signing
+a transaction from a multisig account involve cooperation among the parties involved. A multisig
+transaction can be initiated by any of the key holders, and at least one of them would need to
+import other parties' public keys into their Keybase and generate a multisig public key
+in order to finalize and broadcast the transaction.</p>
+<p>For example, given a multisig key comprising the keys <code>p1</code>, <code>p2</code>, and <code>p3</code>, each of which is held
+by a distinct party, the user holding <code>p1</code> would require to import both <code>p2</code> and <code>p3</code> in order to
+generate the multisig account public key:</p>
+<pre><code class="bash">colorcli keys add \
+  p2 \
+  --pubkey=cosmospub1addwnpepqtd28uwa0yxtwal5223qqr5aqf5y57tc7kk7z8qd4zplrdlk5ez5kdnlrj4
+
+colorcli keys add \
+  p3 \
+  --pubkey=cosmospub1addwnpepqgj04jpm9wrdml5qnss9kjxkmxzywuklnkj0g3a3f8l5wx9z4ennz84ym5t
+
+colorcli keys add \
+  p1p2p3 \
+  --multisig-threshold=2 \
+  --multisig=p1,p2,p3
+</code></pre>
+
+<p>A new multisig public key <code>p1p2p3</code> has been stored, and its address will be
+used as signer of multisig transactions:</p>
+<pre><code class="bash">colorcli keys show --address p1p2p3
+</code></pre>
+
+<p>You may also view multisig threshold, pubkey constituents and respective weights
+by viewing the JSON output of the key or passing the <code>--show-multisig</code> flag:</p>
+<pre><code class="bash">colorcli keys show p1p2p3 -o json
+
+colorcli keys show p1p2p3 --show-multisig
+</code></pre>
+
+<p>The first step to create a multisig transaction is to initiate it on behalf
+of the multisig address created above:</p>
+<pre><code class="bash">colorcli tx send cosmos1570v2fq3twt0f0x02vhxpuzc9jc4yl30q2qned 1000000color \
+  --from=&lt;multisig_address&gt; \
+  --generate-only &gt; unsignedTx.json
+</code></pre>
+
+<p>The file <code>unsignedTx.json</code> contains the unsigned transaction encoded in JSON.
+<code>p1</code> can now sign the transaction with its own private key:</p>
+<pre><code class="bash">colorcli tx sign \
+  unsignedTx.json \
+  --multisig=&lt;multisig_address&gt; \
+  --from=p1 \
+  --output-document=p1signature.json 
+</code></pre>
+
+<p>Once the signature is generated, <code>p1</code> transmits both <code>unsignedTx.json</code> and
+<code>p1signature.json</code> to <code>p2</code> or <code>p3</code>, which in turn will generate their
+respective signature:</p>
+<pre><code class="bash">colorcli tx sign \
+  unsignedTx.json \
+  --multisig=&lt;multisig_address&gt; \
+  --from=p2 \
+  --output-document=p2signature.json
+</code></pre>
+
+<p><code>p1p2p3</code> is a 2-of-3 multisig key, therefore one additional signature
+is sufficient. Any the key holders can now generate the multisig
+transaction by combining the required signature files:</p>
+<pre><code class="bash">colorcli tx multisign \
+  unsignedTx.json \
+  p1p2p3 \
+  p1signature.json p2signature.json &gt; signedTx.json
+</code></pre>
+
+<p>The transaction can now be sent to the node:</p>
+<pre><code class="bash">colorcli tx broadcast signedTx.json
+</code></pre>
+
+<h2 id="shells-completion-scripts">Shells Completion Scripts</h2>
+<p>Completion scripts for popular UNIX shell interpreters such as <code>Bash</code> and <code>Zsh</code>
+can be generated through the <code>completion</code> command, which is available for both
+<code>colord</code> and <code>colorcli</code>.</p>
+<p>If you want to generate <code>Bash</code> completion scripts run the following command:</p>
+<pre><code class="bash">colord completion &gt; colord_completion
+colorcli completion &gt; colorcli_completion
+</code></pre>
+
+<p>If you want to generate <code>Zsh</code> completion scripts run the following command:</p>
+<pre><code class="bash">colord completion --zsh &gt; colord_completion
+colorcli completion --zsh &gt; colorcli_completion
+</code></pre>
+
+<p>::: tip Note
+On most UNIX systems, such scripts may be loaded in <code>.bashrc</code> or
+<code>.bash_profile</code> to enable Bash autocompletion:</p>
+<pre><code class="bash">echo '. colord_completion' &gt;&gt; ~/.bashrc
+echo '. colorcli_completion' &gt;&gt; ~/.bashrc
+</code></pre>
+
+<p>Refer to the user's manual of your interpreter provided by your
+operating system for information on how to enable shell autocompletion.
+:::</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Installation
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../colord/" title="ColorDaemon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                ColorDaemon
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

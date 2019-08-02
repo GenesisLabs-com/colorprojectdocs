@@ -93,7 +93,7 @@ make        # Builds both Colors and Tendermint apps
 **Upload the app to the device**
 The following command will upload the application to the ledger. _Warning: The application will be deleted before uploading._
 ```
-make load_cosmos          # Loads Cosmos app       (for users)
+make load_cosmos          # Loads Colors app       (for users)
 make load_tendermint      # Loads Tendermint app   (for validators)
 ```
 
