@@ -36,7 +36,7 @@
     
     
       
-        <title>Ledger Nano Color App Setup - Color Project Docs</title>
+        <title>Configrations - Color Project Docs</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#tendermintcolors-apps-for-ledger-nano-s" tabindex="1" class="md-skip">
+      <a href="#configration-guidelines-docker-base" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Ledger Nano Color App Setup
+                Configrations
               
             </span>
           
@@ -180,11 +180,124 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Configrations/" title="Configrations" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configrations
+      </label>
+    
+    <a href="./" title="Configrations" class="md-nav__link md-nav__link--active">
       Configrations
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-setup-color-nodes" class="md-nav__link">
+    1. Setup Color Nodes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-setup-lite-client" class="md-nav__link">
+    2. Setup lite client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setup-explorer" class="md-nav__link">
+    3. Setup Explorer
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mannual-method" class="md-nav__link">
+    Mannual Method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-explorer-using-docker" class="md-nav__link">
+    Setup explorer using Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-setup-wallet" class="md-nav__link">
+    4. Setup Wallet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-setup-faucet" class="md-nav__link">
+    5. Setup Faucet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-faucet-backend" class="md-nav__link">
+    Setup faucet backend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-facuet-front-end" class="md-nav__link">
+    Setup facuet front end
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -276,104 +389,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ledger Nano Color App Setup
-      </label>
-    
-    <a href="./" title="Ledger Nano Color App Setup" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../ledger-colors/" title="Ledger Nano Color App Setup" class="md-nav__link">
       Ledger Nano Color App Setup
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#get-source" class="md-nav__link">
-    Get source
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
-    Dependencies
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ledger-nano-s" class="md-nav__link">
-    Ledger Nano S
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#circleci-cli" class="md-nav__link">
-    CircleCI CLI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker-ce" class="md-nav__link">
-    Docker CE
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ubuntu-dependencies" class="md-nav__link">
-    Ubuntu Dependencies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#osx-dependencies" class="md-nav__link">
-    OSX Dependencies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ledger-python-tools" class="md-nav__link">
-    Ledger Python Tools
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -398,58 +418,78 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-source" class="md-nav__link">
-    Get source
+  <a href="#1-setup-color-nodes" class="md-nav__link">
+    1. Setup Color Nodes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
-    Dependencies
+  <a href="#2-setup-lite-client" class="md-nav__link">
+    2. Setup lite client
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setup-explorer" class="md-nav__link">
+    3. Setup Explorer
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ledger-nano-s" class="md-nav__link">
-    Ledger Nano S
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#circleci-cli" class="md-nav__link">
-    CircleCI CLI
+  <a href="#mannual-method" class="md-nav__link">
+    Mannual Method
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#docker-ce" class="md-nav__link">
-    Docker CE
+  <a href="#setup-explorer-using-docker" class="md-nav__link">
+    Setup explorer using Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-setup-wallet" class="md-nav__link">
+    4. Setup Wallet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-setup-faucet" class="md-nav__link">
+    5. Setup Faucet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-faucet-backend" class="md-nav__link">
+    Setup faucet backend
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ubuntu-dependencies" class="md-nav__link">
-    Ubuntu Dependencies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#osx-dependencies" class="md-nav__link">
-    OSX Dependencies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ledger-python-tools" class="md-nav__link">
-    Ledger Python Tools
+  <a href="#setup-facuet-front-end" class="md-nav__link">
+    Setup facuet front end
   </a>
   
 </li>
@@ -476,83 +516,109 @@
               
                 
                 
-                <h1 id="tendermintcolors-apps-for-ledger-nano-s">Tendermint/Colors Apps for Ledger Nano S</h1>
-<h2 id="get-source">Get source</h2>
-<p>Apart from cloning, be sure you get all the submodules, by calling:</p>
-<pre><code>git submodule update --init --recursive
+                <h1 id="configration-guidelines-docker-base">Configration Guidelines Docker Base</h1>
+<p><img alt="Color Architecure" src="../colorArchitecure.jpg" /></p>
+<h2 id="1-setup-color-nodes">1. Setup Color Nodes</h2>
+<p>To setup color nodes color the code from color platform</p>
+<pre><code>https://github.com/ColorPlatform/color-sdk
+
 </code></pre>
 
-<h2 id="dependencies">Dependencies</h2>
-<h4 id="ledger-nano-s">Ledger Nano S</h4>
-<p>This project requires ledger firmware 1.5.5</p>
-<p>The current repository keeps track of Ledger's SDK but it is posible to override it by changing the git submodule.</p>
-<h4 id="circleci-cli">CircleCI CLI</h4>
-<p>CircleCI allows compiling <code>BOLOS</code> firmware both in Linux and MacOS. The CLI will download a docker container ready to run.</p>
-<p>To install, follow the instructions here:</p>
-<p>https://circleci.com/docs/2.0/local-cli/#installing-the-circleci-local-cli-on-macos-and-linux-distros</p>
-<h4 id="docker-ce">Docker CE</h4>
-<p>CircleCI CLI should have instructed you to install Docker. Just in case, you can find instructions here too:</p>
-<p>https://docs.docker.com/install/</p>
-<h4 id="ubuntu-dependencies">Ubuntu Dependencies</h4>
-<p>Install the following packages:</p>
-<pre><code>sudo apt-get update &amp;&amp; sudo apt-get -y install build-essential git sudo wget cmake libssl-dev libgmp-dev autoconf libtool python-pip
+<p>run the collowing commnad to run nodes </p>
+<pre><code>make install
+make build
+make build-docker-colordnode
+docker-compose up
 </code></pre>
 
-<h4 id="osx-dependencies">OSX Dependencies</h4>
-<p>It is recommended that you install brew and xcode. </p>
-<p>Additionally you will need to:</p>
-<pre><code>brew install libusb
+<h2 id="2-setup-lite-client">2. Setup lite client</h2>
+<p>To run the lite run the following command</p>
+<pre><code>colorcli rest-server --chain-id=colors-test-01     --laddr=tcp://0.0.0.0:1317     --node tcp://localhost:26657     --trust-node=false --home node1/colorcli
+
 </code></pre>
 
-<h4 id="ledger-python-tools">Ledger Python Tools</h4>
-<p>Ledger firmware 1.5.5 requires ledgerblue &gt;= 0.1.21. </p>
-<p>In most cases, <code>make deps</code> should be able to install all dependencies: </p>
-<pre><code class="bash">make deps
+<p>you can set path to any node </p>
+<p>e.g --home node1/colorcli</p>
+<h2 id="3-setup-explorer">3. Setup Explorer</h2>
+<h3 id="prerequisite">Prerequisite</h3>
+<ol>
+<li>Install nodejs v11.15.0</li>
+<li>Install Meteor </li>
+<li>Install Yarn</li>
+</ol>
+<p>Here is the architecture of color explorer</p>
+<p>Clone the code form color github</p>
+<p>setup the mongo db using the collowing commands</p>
+<pre><code>sudo apt update
+
+sudo apt install -y mongodb
+
+sudo systemctl status mongodb
 </code></pre>
 
-<h1 id="building">Building</h1>
-<p>There are different local builds:</p>
-<ul>
-<li>Generic C++ code and run unit tests</li>
-<li>BOLOS firmware</li>
-</ul>
-<h3 id="generic-c-code-tests">Generic C++ Code / Tests</h3>
-<p>This is useful when you want to make changes to libraries, run unit tests, etc. It will build all common libraries and unit tests.</p>
-<p><strong>Compile</strong></p>
-<pre><code>cmake . &amp;&amp; make
+<h3 id="mannual-method">Mannual Method</h3>
+<p>Clone the project form color platform</p>
+<pre><code>git clone https://github.com/RNSSolution/explorer.git
+cd bundle
 </code></pre>
 
-<p>In Case Above Command didn't work, use the command given below. It will compile local code but it will not try to crosscompile the apps. Typically this is more efficient too.</p>
-<pre><code>cmake -DDISABLE_DOCKER_BUILDS=ON . &amp;&amp; make
+<p>To Get genesis file run the follwing command</p>
+<pre><code>https://raw.githubusercontent.com/ColorPlatform/explorer/colorsplatform/development/settings.json
 </code></pre>
 
-<p><strong>Run unit tests</strong></p>
-<pre><code>export GTEST_COLOR=1 &amp;&amp; ctest -VV
+<p>run the command to start explorer</p>
+<pre><code>PORT=3000 ROOT_URL=http://localhost/ MONGO_URL='mongodb://{dbname}:{password}@{IP}:27017/colorplatform' METEOR_SETTINGS=&quot;$(cat settings.json)&quot; meteor node main.js
 </code></pre>
 
-<h3 id="bolos-ledger-firmware">BOLOS / Ledger firmware</h3>
-<p>In order to keep builds reproducible, a Makefile is provided.</p>
-<p>The Makefile will build the firmware in a docker container and leave the binary in the correct directory.</p>
-<p><strong>Build</strong></p>
-<p>The following command will build the app firmware inside a container. All output will be available to the host.</p>
-<pre><code>make        # Builds both Colors and Tendermint apps
+<h3 id="setup-explorer-using-docker">Setup explorer using Docker</h3>
+<p>To Get genesis file run the follwing command</p>
+<pre><code>https://raw.githubusercontent.com/ColorPlatform/explorer/colorsplatform/development/settings.json
 </code></pre>
 
-<p><strong>Upload the app to the device</strong>
-The following command will upload the application to the ledger. <em>Warning: The application will be deleted before uploading.</em></p>
-<pre><code>make load_cosmos          # Loads Colors app       (for users)
-make load_tendermint      # Loads Tendermint app   (for validators)
+<p>To run the docker </p>
+<pre><code>docker run -d -p 3000:3000  -e MONGO_URL=mongodb://{dbname}:{pass}@{IP}:27017/colorplatform -e METEOR_SETTINGS=&quot;$(cat settings.json)&quot; --name explorer rnssolutions/explorer:0.1.5
 </code></pre>
 
-<h2 id="continuous-integration-debugging-ci-issues">Continuous Integration (debugging CI issues)</h2>
-<p>This will build in a docker image identical to what CircleCI uses. This provides a clean, reproducible environment. It also can be helpful to debug CI issues.</p>
-<p><strong>To build in ubuntu 16.04 and run C++ unit tests</strong></p>
-<pre><code>circleci build
+<h2 id="4-setup-wallet">4. Setup Wallet</h2>
+<p>Here the Architecure Diagram of wallet configration</p>
+<p>clone the lite-proxy</p>
+<pre><code>git clone https://github.com/ColorPlatform/lite-proxy.git
+cd lite-proxy
 </code></pre>
 
-<p><strong>To build BOLOS firmware</strong></p>
-<pre><code>circleci build --job build_ledger_user
-circleci build --job build_ledger_val
+<p>install the certificated </p>
+<pre><code>yarn install
+yarn certificates
+</code></pre>
+
+<p>To run the proxy</p>
+<pre><code>yarn proxy
+</code></pre>
+
+<p>By default it will run on <code>https://lcd.testnet.color-platform.rnssol.com</code></p>
+<p>to change this update value of target in proxy.js</p>
+<p>Type the following command in terminalt to run frone end of wallet</p>
+<pre><code>docker run -p 9080:9080 -d rnssolutions/colorwallet:1.0.4
+
+</code></pre>
+
+<h2 id="5-setup-faucet">5. Setup Faucet</h2>
+<p>Faucet consist of backed and front end </p>
+<h3 id="setup-faucet-backend">Setup faucet backend</h3>
+<p>clone the code from color platform</p>
+<pre><code>git clone https://github.com/ColorPlatform/faucet-backend.git
+cd faucet-backend
+</code></pre>
+
+<p>set the configration in .env.local
+set FAUCET_KEY with with address of validator </p>
+<p>to run the faucet </p>
+<pre><code>./faucet
+</code></pre>
+
+<h3 id="setup-facuet-front-end">Setup facuet front end</h3>
+<p>run the following command to run faucet front end </p>
+<pre><code> docker run -p 8080:8080 -d rnssolutions/color-faucet-frontend:0.0.9-rc
 </code></pre>
                 
                   
@@ -574,7 +640,7 @@ circleci build --job build_ledger_val
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../ledgersetup/" title="Ledger Nano Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -583,11 +649,25 @@ circleci build --job build_ledger_val
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Ledger Nano Setup
+                Installation
               </span>
             </div>
           </a>
         
+        
+          <a href="../colorcli/" title="ColorCLI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                ColorCLI
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
