@@ -238,6 +238,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setup-the-mongo-db-using-the-collowing-commands" class="md-nav__link">
+    Setup the mongo db using the collowing commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mannual-method" class="md-nav__link">
     Mannual Method
   </a>
@@ -260,6 +267,33 @@
   <a href="#4-setup-wallet" class="md-nav__link">
     4. Setup Wallet
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lite-proxy" class="md-nav__link">
+    Lite Proxy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallet-url-shortner" class="md-nav__link">
+    Wallet URL shortner
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallet-docker-container" class="md-nav__link">
+    Wallet Docker Container
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -447,6 +481,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#setup-the-mongo-db-using-the-collowing-commands" class="md-nav__link">
+    Setup the mongo db using the collowing commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mannual-method" class="md-nav__link">
     Mannual Method
   </a>
@@ -469,6 +510,33 @@
   <a href="#4-setup-wallet" class="md-nav__link">
     4. Setup Wallet
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lite-proxy" class="md-nav__link">
+    Lite Proxy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallet-url-shortner" class="md-nav__link">
+    Wallet URL shortner
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallet-docker-container" class="md-nav__link">
+    Wallet Docker Container
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -546,14 +614,24 @@ docker-compose up
 <li>Install Meteor </li>
 <li>Install Yarn</li>
 </ol>
-<p>Here is the architecture of color explorer</p>
-<p>Clone the code form color github</p>
-<p>setup the mongo db using the collowing commands</p>
+<h3 id="setup-the-mongo-db-using-the-collowing-commands">Setup the mongo db using the collowing commands</h3>
 <pre><code>sudo apt update
 
 sudo apt install -y mongodb
 
 sudo systemctl status mongodb
+</code></pre>
+
+<p>Create User on mongo db
+Type following in side mongodb</p>
+<pre><code>
+db.createUser(
+   {
+      user: &quot;username&quot;,
+      pwd: &quot;password&quot;,
+      roles: [ { role: &quot;readWrite&quot;, db: &quot;colorplatform&quot; } ]
+   }
+);
 </code></pre>
 
 <h3 id="mannual-method">Mannual Method</h3>
@@ -567,7 +645,7 @@ cd bundle
 </code></pre>
 
 <p>run the command to start explorer</p>
-<pre><code>PORT=3000 ROOT_URL=http://localhost/ MONGO_URL='mongodb://{dbname}:{password}@{IP}:27017/colorplatform' METEOR_SETTINGS=&quot;$(cat settings.json)&quot; meteor node main.js
+<pre><code>PORT=3000 ROOT_URL=http://localhost/ MONGO_URL='mongodb://{username}:{password}@{IP}:27017/colorplatform' METEOR_SETTINGS=&quot;$(cat settings.json)&quot; meteor node main.js
 </code></pre>
 
 <h3 id="setup-explorer-using-docker">Setup explorer using Docker</h3>
@@ -576,11 +654,11 @@ cd bundle
 </code></pre>
 
 <p>To run the docker </p>
-<pre><code>docker run -d -p 3000:3000  -e MONGO_URL=mongodb://{dbname}:{pass}@{IP}:27017/colorplatform -e METEOR_SETTINGS=&quot;$(cat settings.json)&quot; --name explorer rnssolutions/explorer:0.1.5
+<pre><code>docker run -d -p 3000:3000  -e MONGO_URL=mongodb://{username}:{password}@{IP}:27017/colorplatform -e METEOR_SETTINGS=&quot;$(cat settings.json)&quot; --name explorer rnssolutions/explorer:0.1.5
 </code></pre>
 
 <h2 id="4-setup-wallet">4. Setup Wallet</h2>
-<p>Here the Architecure Diagram of wallet configration</p>
+<h3 id="lite-proxy">Lite Proxy</h3>
 <p>clone the lite-proxy</p>
 <pre><code>git clone https://github.com/ColorPlatform/lite-proxy.git
 cd lite-proxy
@@ -597,6 +675,14 @@ yarn certificates
 
 <p>By default it will run on <code>https://lcd.testnet.color-platform.rnssol.com</code></p>
 <p>to change this update value of target in proxy.js</p>
+<h3 id="wallet-url-shortner">Wallet URL shortner</h3>
+<p>To Setup url shortner clone the code</p>
+<pre><code>git clone https://github.com/ColorPlatform/url-shortner.git
+cd url-shortner
+docker-compose up
+</code></pre>
+
+<h3 id="wallet-docker-container">Wallet Docker Container</h3>
 <p>Type the following command in terminalt to run frone end of wallet</p>
 <pre><code>docker run -p 9080:9080 -d rnssolutions/colorwallet:1.0.4
 
