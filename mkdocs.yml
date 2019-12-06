@@ -1,6 +1,7 @@
 site_name: Color Project Docs
 nav:
     - Installation: index.md
+    - Configrations: Configrations.md
     - ColorCLI: colorcli.md
     - ColorDaemon: colord.md
     - Faucet: faucet.md
@@ -9,6 +10,7 @@ nav:
     - ChangeValidatorLogo: ChangeMonikerLogo.md
     - Ledger Nano Setup: ledgersetup.md
     - Ledger Nano Color App Setup: ledger-colors.md
+    
 theme: material
 
 
