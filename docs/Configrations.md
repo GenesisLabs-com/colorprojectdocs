@@ -45,14 +45,8 @@ e.g --home node1/colorcli
 2. Install Meteor 
 3. Install Yarn
 
-Here is the architecture of color explorer
 
-
-
-
-Clone the code form color github
-
-setup the mongo db using the collowing commands
+### Setup the mongo db using the collowing commands
 
 ```
 sudo apt update
@@ -60,6 +54,18 @@ sudo apt update
 sudo apt install -y mongodb
 
 sudo systemctl status mongodb
+```
+Create User on mongo db
+Type following in side mongodb
+```
+
+db.createUser(
+   {
+      user: "username",
+      pwd: "password",
+      roles: [ { role: "readWrite", db: "colorplatform" } ]
+   }
+);
 ```
 
 ### Mannual Method
@@ -78,8 +84,9 @@ https://raw.githubusercontent.com/ColorPlatform/explorer/colorsplatform/developm
 
 run the command to start explorer
 ```
-PORT=3000 ROOT_URL=http://localhost/ MONGO_URL='mongodb://{dbname}:{password}@{IP}:27017/colorplatform' METEOR_SETTINGS="$(cat settings.json)" meteor node main.js
+PORT=3000 ROOT_URL=http://localhost/ MONGO_URL='mongodb://{username}:{password}@{IP}:27017/colorplatform' METEOR_SETTINGS="$(cat settings.json)" meteor node main.js
 ```
+
 
 
 ### Setup explorer using Docker
@@ -90,17 +97,14 @@ https://raw.githubusercontent.com/ColorPlatform/explorer/colorsplatform/developm
 ```
 To run the docker 
 ```
-docker run -d -p 3000:3000  -e MONGO_URL=mongodb://{dbname}:{pass}@{IP}:27017/colorplatform -e METEOR_SETTINGS="$(cat settings.json)" --name explorer rnssolutions/explorer:0.1.5
+docker run -d -p 3000:3000  -e MONGO_URL=mongodb://{username}:{password}@{IP}:27017/colorplatform -e METEOR_SETTINGS="$(cat settings.json)" --name explorer rnssolutions/explorer:0.1.5
 ```
 
 
 
 ## 4. Setup Wallet
 
-Here the Architecure Diagram of wallet configration
-
-
-
+### Lite Proxy
 
 clone the lite-proxy
 
@@ -123,6 +127,18 @@ By default it will run on ```https://lcd.testnet.color-platform.rnssol.com```
 
 to change this update value of target in proxy.js
 
+
+### Wallet URL shortner
+
+To Setup url shortner clone the code
+
+```
+git clone https://github.com/ColorPlatform/url-shortner.git
+cd url-shortner
+docker-compose up
+```
+
+### Wallet Docker Container
 
 Type the following command in terminalt to run frone end of wallet
 
