@@ -587,12 +587,12 @@
                 <h1 id="configration-guidelines-docker-base">Configration Guidelines Docker Base</h1>
 <p><img alt="Color Architecure" src="../colorArchitecure.jpg" /></p>
 <h2 id="1-setup-color-nodes">1. Setup Color Nodes</h2>
-<p>To setup color nodes color the code from color platform</p>
+<p>To setup color nodes, clone the code from color platform</p>
 <pre><code>https://github.com/ColorPlatform/color-sdk
 
 </code></pre>
 
-<p>run the collowing commnad to run nodes </p>
+<p>run the following commnad to start nodes </p>
 <pre><code>make install
 make build
 make build-docker-colordnode
@@ -600,7 +600,7 @@ docker-compose up
 </code></pre>
 
 <h2 id="2-setup-lite-client">2. Setup lite client</h2>
-<p>To run the lite run the following command</p>
+<p>Run the following command to start lite client </p>
 <pre><code>colorcli rest-server --chain-id=colors-test-01     --laddr=tcp://0.0.0.0:1317     --node tcp://localhost:26657     --trust-node=false --home node1/colorcli
 
 </code></pre>
@@ -635,7 +635,7 @@ db.createUser(
 </code></pre>
 
 <h3 id="mannual-method">Mannual Method</h3>
-<p>Clone the project form color platform</p>
+<p>Clone the project from color platform</p>
 <pre><code>git clone https://github.com/RNSSolution/explorer.git
 cd bundle
 </code></pre>
@@ -644,7 +644,7 @@ cd bundle
 <pre><code>https://raw.githubusercontent.com/ColorPlatform/explorer/colorsplatform/development/settings.json
 </code></pre>
 
-<p>run the command to start explorer</p>
+<p>run the following command to start explorer</p>
 <pre><code>PORT=3000 ROOT_URL=http://localhost/ MONGO_URL='mongodb://{username}:{password}@{IP}:27017/colorplatform' METEOR_SETTINGS=&quot;$(cat settings.json)&quot; meteor node main.js
 </code></pre>
 
@@ -683,7 +683,7 @@ docker-compose up
 </code></pre>
 
 <h3 id="wallet-docker-container">Wallet Docker Container</h3>
-<p>Type the following command in terminalt to run frone end of wallet</p>
+<p>Type the following command in terminal to run front end of wallet</p>
 <pre><code>docker run -p 9080:9080 -d rnssolutions/colorwallet:1.0.4
 
 </code></pre>
