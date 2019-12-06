@@ -11,12 +11,12 @@
 
 ## 1. Setup Color Nodes
 
-To setup color nodes color the code from color platform
+To setup color nodes, clone the code from color platform
 ```
 https://github.com/ColorPlatform/color-sdk
 
 ```
-run the collowing commnad to run nodes 
+run the following commnad to start nodes 
 ```
 make install
 make build
@@ -27,7 +27,7 @@ docker-compose up
 
 ## 2. Setup lite client
 
-To run the lite run the following command
+Run the following command to start lite client 
 ```
 colorcli rest-server --chain-id=colors-test-01     --laddr=tcp://0.0.0.0:1317     --node tcp://localhost:26657     --trust-node=false --home node1/colorcli
 
@@ -70,7 +70,7 @@ db.createUser(
 
 ### Mannual Method
 
-Clone the project form color platform
+Clone the project from color platform
 
 ```
 git clone https://github.com/RNSSolution/explorer.git
@@ -82,7 +82,7 @@ To Get genesis file run the follwing command
 https://raw.githubusercontent.com/ColorPlatform/explorer/colorsplatform/development/settings.json
 ```
 
-run the command to start explorer
+run the following command to start explorer
 ```
 PORT=3000 ROOT_URL=http://localhost/ MONGO_URL='mongodb://{username}:{password}@{IP}:27017/colorplatform' METEOR_SETTINGS="$(cat settings.json)" meteor node main.js
 ```
@@ -140,7 +140,7 @@ docker-compose up
 
 ### Wallet Docker Container
 
-Type the following command in terminalt to run frone end of wallet
+Type the following command in terminal to run front end of wallet
 
 ```
 docker run -p 9080:9080 -d rnssolutions/colorwallet:1.0.4
