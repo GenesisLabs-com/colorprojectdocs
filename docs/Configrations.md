@@ -74,12 +74,11 @@ Clone the project from color platform
 
 ```
 git clone https://github.com/RNSSolution/explorer.git
-cd bundle
-```
+cd ~/explorer/explorer-tesetnet-v1.0/programs/server
+npm install
+cd ~/explorer/explorer-tesetnet-v1.0
 
-To Get genesis file run the follwing command
-```
-https://raw.githubusercontent.com/ColorPlatform/explorer/colorsplatform/development/settings.json
+
 ```
 
 run the following command to start explorer
