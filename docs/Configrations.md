@@ -74,12 +74,19 @@ Clone the project from color platform
 
 ```
 git clone https://github.com/RNSSolution/explorer.git
-cd ~/explorer/explorer-tesetnet-v1.0/programs/server
-npm install
-cd ~/explorer/explorer-tesetnet-v1.0
-
 
 ```
+
+run following commnad to genrate build
+
+```
+sh build.sh
+cd bundle/programs/server/
+npm install
+cd ~/explorer/bundle
+```
+
+
 
 run the following command to start explorer
 ```
