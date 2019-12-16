@@ -146,6 +146,25 @@ docker run -p 9080:9080 -d rnssolutions/colorwallet:1.0.4
 
 ```
 
+### Wallet Mannul Method
+
+clone the code from color platform 
+```
+https://github.com/ColorPlatform/faucet-backend.git
+```
+
+run following command by update the endpoint url 
+
+```
+ QRCODE=https://wallet.testnet.color-platform.org FAUCET=https://proxy.testnet.color-platform.org:8010/claim/wallet SHORTURL=https://s.testnet.color-platform.org/encode/ CHAIN=colors-test-01 STARGATE=https://proxy.testnet.color-platform.org:9061 RPC=https://rpc.testnet.color-platform.org yarn build
+```
+
+run following commnad to run wallet
+
+```
+yarn serve:dist
+```
+
 
 ## 5. Setup Faucet
 
@@ -162,8 +181,16 @@ git clone https://github.com/ColorPlatform/faucet-backend.git
 cd faucet-backend
 ```
 
-set the configration in .env.local
+set the configration in .env
 set FAUCET_KEY with with address of validator 
+
+set FAUCET_KEY with with address of validator 
+set FAUCET_PASS with pass of validator
+set FAUCET_CHAIN with faucet chain
+set FAUCET_HOME with path to validator cli
+
+
+a sample configration  is given in the .env file
 
 to run the faucet 
 ```
@@ -178,6 +205,25 @@ run the following command to run faucet front end
 ```
  docker run -p 8080:8080 -d rnssolutions/color-faucet-frontend:0.0.9-rc
 ```
+
+Mannul Method 
+
+clone the code from color platform
+```
+https://github.com/ColorPlatform/color-faucet-stable.git
+```
+
+run the following command to buid the faucet front end
+```
+ NODE_ENV=production VUE_APP_CHAIN=colors-test-01 VUE_APP_CLAIM_URL=https://proxy.testnet.color-platform.org:8010/claim yarn build
+```
+update your end point in above command
+
+run following command to run faucet front end
+```
+yarn serve:dist
+```
+
 
 
 
