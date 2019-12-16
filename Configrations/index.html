@@ -292,6 +292,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#wallet-mannul-method" class="md-nav__link">
+    Wallet Mannul Method
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -535,6 +542,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#wallet-mannul-method" class="md-nav__link">
+    Wallet Mannul Method
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -688,6 +702,19 @@ docker-compose up
 
 </code></pre>
 
+<h3 id="wallet-mannul-method">Wallet Mannul Method</h3>
+<p>clone the code from color platform </p>
+<pre><code>https://github.com/ColorPlatform/faucet-backend.git
+</code></pre>
+
+<p>run following command by update the endpoint url </p>
+<pre><code> QRCODE=https://wallet.testnet.color-platform.org FAUCET=https://proxy.testnet.color-platform.org:8010/claim/wallet SHORTURL=https://s.testnet.color-platform.org/encode/ CHAIN=colors-test-01 STARGATE=https://proxy.testnet.color-platform.org:9061 RPC=https://rpc.testnet.color-platform.org yarn build
+</code></pre>
+
+<p>run following commnad to run wallet</p>
+<pre><code>yarn serve:dist
+</code></pre>
+
 <h2 id="5-setup-faucet">5. Setup Faucet</h2>
 <p>Faucet consist of backed and front end </p>
 <h3 id="setup-faucet-backend">Setup faucet backend</h3>
@@ -696,8 +723,13 @@ docker-compose up
 cd faucet-backend
 </code></pre>
 
-<p>set the configration in .env.local
+<p>set the configration in .env
 set FAUCET_KEY with with address of validator </p>
+<p>set FAUCET_KEY with with address of validator 
+set FAUCET_PASS with pass of validator
+set FAUCET_CHAIN with faucet chain
+set FAUCET_HOME with path to validator cli</p>
+<p>a sample configration  is given in the .env file</p>
 <p>to run the faucet </p>
 <pre><code>./faucet
 </code></pre>
@@ -705,6 +737,20 @@ set FAUCET_KEY with with address of validator </p>
 <h3 id="setup-facuet-front-end">Setup facuet front end</h3>
 <p>run the following command to run faucet front end </p>
 <pre><code> docker run -p 8080:8080 -d rnssolutions/color-faucet-frontend:0.0.9-rc
+</code></pre>
+
+<p>Mannul Method </p>
+<p>clone the code from color platform</p>
+<pre><code>https://github.com/ColorPlatform/color-faucet-stable.git
+</code></pre>
+
+<p>run the following command to buid the faucet front end</p>
+<pre><code> NODE_ENV=production VUE_APP_CHAIN=colors-test-01 VUE_APP_CLAIM_URL=https://proxy.testnet.color-platform.org:8010/claim yarn build
+</code></pre>
+
+<p>update your end point in above command</p>
+<p>run following command to run faucet front end</p>
+<pre><code>yarn serve:dist
 </code></pre>
                 
                   
